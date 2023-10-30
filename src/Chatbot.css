@@ -1,0 +1,119 @@
+.chatbot {
+  /* background-image: url(chatbot_bg.png); */
+  min-height: 40px;
+  max-height: 50px;
+}
+
+.chatbot-container {
+  min-height: 60px;
+  max-height: 50px;
+  max-width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.chatbot-container.query-submitted .chat-history {
+  /* margin-bottom: 5px; */
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(220, 220, 220, 0.1)
+  );
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-entry {
+  margin-bottom: 10px;
+}
+
+.user-message {
+  color: blue;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.bot-message {
+  color: green;
+  font-size: 16px;
+  overflow: hidden; /* Hide overflow to create a typing effect */
+  animation: typing 1s steps(40, end); /* Typing animation */
+  margin-bottom: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.user-input-container {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
+  position: bottom;
+  width: 100%;
+}
+
+.user-input {
+  flex-grow: 15;
+  font-size: 16px;
+  padding: 5px;
+  margin-right: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove default outline */
+}
+
+.user-input:focus {
+  border: 1px solid #4caf50; /* Green border on focus */
+}
+
+.user-input::placeholder {
+  font-style: italic;
+  font-weight: 500;
+  color: #aaa; /* Light gray placeholder text color */
+  font-size: 12px;
+}
+
+/* Additional styles for modern look */
+.user-input:focus::placeholder {
+  color: #666; /* Darker gray on focus */
+}
+
+.ask-button {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+  transition: ease 0.3s;
+}
+
+.ask-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.ask-button:disabled {
+  background-color: #ddd; /* Light gray for disabled state */
+  color: #aaa; /* Light gray text color for disabled state */
+  cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+.heading {
+  font-size: 24px;
+  text-align: justify;
+  margin-bottom: 40px;
+}

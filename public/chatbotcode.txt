@@ -1,0 +1,325 @@
+// import "../styles.css";
+// const { spawn } = require("child_process");
+// import React, { useState, useEffect } from 'react';
+
+// const Chatbot = () => {
+//   const [input, setInput] = useState("");
+//   const [messages, setMessages] = useState([]);
+
+//   const sendMessage = () => {
+//     if (input) {
+//       setMessages([...messages, { text: input, user: true }]);
+//       setInput("");
+
+//       // Send the user message to the backend
+//       fetch("/send", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ message: input }),
+//       })
+//         .then((response) => response.json())
+//         .then((data) => {
+//           setMessages([...messages, { text: data.message, user: false }]);
+//         })
+//         .catch((error) => console.error("Error sending message:", error));
+//     }
+//   };
+
+//   useEffect(() => {
+//     // Fetch chat history from the backend on component load
+//     fetch("/chat")
+//       .then((response) => response.json())
+//       .then((data) => setMessages(data.messages))
+//       .catch((error) => console.error("Error fetching chat history:", error));
+//   }, []);
+
+//   const CustomBox = styled(Box)(({ theme }) => ({
+//     display: "flex",
+//     flexWrap: "wrap",
+//     justifyContent: "space-around",
+//     gap: theme.spacing(10),
+//     backgroundColor: "#e3d7eb",
+//     alignItems: "center",
+//     [theme.breakpoints.down("md")]: {
+//       flexDirection: "column",
+//       textAlign: "center",
+//     },
+//   }));
+
+//   return (
+//     <>
+//       <Box>
+//         <Navbar />
+//         <Box
+//           sx={{
+//             justifyContent: "center",
+//             display: "flex",
+//             alignItems: "center",
+//             flexDirection: "column",
+//             width: "100%",
+//             flexWrap: "wrap",
+//           }}
+//         >
+//           <Box
+//             className="chat-container"
+//             sx={{
+//               minHeight: "55vh",
+//               color: "black",
+//               fontSize: "20px",
+//               border: "2px solid",
+//               borderColor: "#4d3061",
+//               width: "80vh",
+//               padding: "3rem",
+//               textAlign: "center",
+//               backgroundColor: "#f3eef6",
+//             }}
+//           >
+//             {messages.map((message, index) => (
+//               <div
+//                 key={index}
+//                 className={message.user ? "user-message" : "bot-message"}
+//               >
+//                 {message.text}
+//               </div>
+//             ))}
+//           </Box>
+//           <Box
+//           //   sx={{
+//           //     minHeight: "85vh",
+//           //     color: "black",
+//           //     fontSize: "h1",
+//           //     fontWeight: "bold",
+//           //     border: "5px solid",
+//           //     borderColor: "#4d3061",
+//           //     width: "55vh",
+//           //     padding: "3rem",
+//           //     textAlign: "center",
+//           //     backgroundColor: "#f3eef6",
+//           //     justifyContent: "center",
+//           //     display: "flex",
+//           //     alignItems: "center",
+
+//           //     "&:hover": {
+//           //       boxShadow: " 0 0 50px 15px #ffffff",
+//           //     },
+//           //   }}
+//           >
+//             <form>
+//               <input
+//                 className="input"
+//                 style={{
+//                   width: "80vh",
+//                   minHeight: "10vh",
+//                   display: "block",
+//                   border: "none",
+//                   borderBottom: "1px solid #999",
+//                   padding: "6px 30px",
+//                   fontFamily: "Poppins",
+//                   boxSizing: "border-box",
+//                   background: "#f9f7fb",
+//                   fontSize: "16px",
+//                   border: "2px solid",
+//                   borderColor: "#4d3061",
+//                 }}
+//                 type="text"
+//                 placeholder="Say hello to pew-pew..."
+//                 value={input}
+//                 onChange={(e) => setInput(e.target.value)}
+//               />
+//               <br />
+//               <button
+//                 className="button-bot"
+//                 type="submit"
+//                 onclick={sendMessage}
+//                 style={{
+//                   backgroundColor: "#233326",
+//                   color: "#fff",
+//                   fontWeight: "700",
+//                   fontSize: "14px",
+//                   cursor: "pointer",
+//                   padding: "0.5rem 1.25rem",
+//                   borderRadius: "7px",
+//                   textTransform: "none",
+//                   display: "block",
+//                   border: "2px solid transparent",
+//                 }}
+//               >
+//                 Send
+//               </button>
+//             </form>
+//           </Box>
+//         </Box>
+//       </Box>
+//     </>
+//   );
+// };
+
+// class Chatbot extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       messages: [],
+//       userInput: "",
+//     };
+//   }
+//   handleChange = (e) => {
+//     this.setState({ userInput: e.target.value });
+//   };
+
+//   handleSubmit = (e) => {
+//     e.preventDefault();
+//     const { userInput } = this.state;
+
+//     // Add the user's message to the state
+//     this.setState((prevState) => ({
+//       messages: [...prevState.messages, { text: userInput, user: "user" }],
+//     }));
+
+//     // Send user input to the Python backend running in the terminal
+//     this.sendToBackend(userInput);
+
+//     // Clear the input field
+//     this.setState({ userInput: "" });
+//   };
+
+//   sendToBackend = (userInput) => {
+//     // Create a child process to run the Python script (replace 'backend.py' with your script)
+//     const pythonProcess = spawn("python", ["main.py"]);
+//     // Send user input to the Python script
+//     pythonProcess.stdin.write(userInput + "\n");
+//     pythonProcess.stdin.end();
+//     // Handle responses from the Python script
+//     pythonProcess.stdout.on("data", (data) => {
+//       const botResponse = data.toString();
+//       //Add the chatbot's response to the state
+//       this.setState((prevState) => ({
+//         messages: [...prevState.messages, { text: botResponse, user: "bot" }],
+//       }));
+//     });
+//   };
+
+//   render() {
+//     const { messages, userInput } = this.state;
+//     const CustomBox = styled(Box)(({ theme }) => ({
+//       display: "flex",
+//       flexWrap: "wrap",
+//       justifyContent: "space-around",
+//       gap: theme.spacing(10),
+//       backgroundColor: "#e3d7eb",
+//       alignItems: "center",
+//       [theme.breakpoints.down("md")]: {
+//         flexDirection: "column",
+//         textAlign: "center",
+//       },
+//     }));
+
+//     return (
+//       <Box>
+//         <Navbar />
+//         <Box
+//           sx={{
+//             justifyContent: "center",
+//             display: "flex",
+//             alignItems: "center",
+//             flexDirection: "column",
+//             width: "100%",
+//             flexWrap: "wrap",
+//           }}
+//         >
+//           <Box
+//             className="chat-container"
+//             sx={{
+//               minHeight: "55vh",
+//               color: "black",
+//               fontSize: "20px",
+//               border: "2px solid",
+//               borderColor: "#4d3061",
+//               width: "80vh",
+//               padding: "3rem",
+//               textAlign: "center",
+//               backgroundColor: "#f3eef6",
+//             }}
+//           >
+//             {messages.map((message, index) => (
+//               <div key={index} className={`message ${message.user}`}>
+//                 {message.text}
+//               </div>
+//             ))}
+//           </Box>
+//           <Box
+//           //   sx={{
+//           //     minHeight: "85vh",
+//           //     color: "black",
+//           //     fontSize: "h1",
+//           //     fontWeight: "bold",
+//           //     border: "5px solid",
+//           //     borderColor: "#4d3061",
+//           //     width: "55vh",
+//           //     padding: "3rem",
+//           //     textAlign: "center",
+//           //     backgroundColor: "#f3eef6",
+//           //     justifyContent: "center",
+//           //     display: "flex",
+//           //     alignItems: "center",
+
+//           //     "&:hover": {
+//           //       boxShadow: " 0 0 50px 15px #ffffff",
+//           //     },
+//           //   }}
+//           >
+//             <form onSubmit={this.handleSubmit}>
+//               <input
+//                 className="input"
+//                 style={{
+//                   width: "80vh",
+//                   minHeight: "10vh",
+//                   display: "block",
+//                   border: "none",
+//                   borderBottom: "1px solid #999",
+//                   padding: "6px 30px",
+//                   fontFamily: "Poppins",
+//                   boxSizing: "border-box",
+//                   background: "#f9f7fb",
+//                   fontSize: "16px",
+//                   border: "2px solid",
+//                   borderColor: "#4d3061",
+//                 }}
+//                 type="text"
+//                 value={userInput}
+//                 onChange={this.handleChange}
+//                 placeholder="Say hello to pew-pew..."
+//               />
+//               <br />
+//               <button
+//                 className="button-bot"
+//                 type="submit"
+//                 style={{
+//                   backgroundColor: "#233326",
+//                   color: "#fff",
+//                   fontWeight: "700",
+//                   fontSize: "14px",
+//                   cursor: "pointer",
+//                   padding: "0.5rem 1.25rem",
+//                   borderRadius: "7px",
+//                   textTransform: "none",
+//                   display: "block",
+//                   onclick: "{onClick}",
+//                   border: "2px solid transparent",
+//                   "&:hover": {
+//                     backgroundColor: "#fff",
+//                     color: "#233326",
+//                     borderColor: "#233326",
+//                   },
+//                 }}
+//               >
+//                 Send
+//               </button>
+//             </form>
+//           </Box>
+//         </Box>
+//       </Box>
+//     );
+//   }
+// }
+
+//export default Chatbot;
