@@ -3,8 +3,6 @@ import React from "react";
 import Navbar from "./Navbar";
 import CustomButton from "./CustomButton";
 import Footer from "./Footer";
-import Gradient from "../media/au_grd1.png";
-import Gradient2 from "../media/au_grd2.png";
 
 export const Landingau = () => {
   const CustomBox = styled(Box)(({ theme }) => ({

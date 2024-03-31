@@ -294,15 +294,6 @@ const Benefits = () => {
           </Box>
         </BenefitsBox>
       </Container>
-      <Box
-        sx={{
-          display: "flex",
-          position: "absolute",
-          bottom: -3470,
-          flex: "1.00",
-        }}
-      >
-      </Box>
     </Box>
   );
 };
