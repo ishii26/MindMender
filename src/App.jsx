@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import Chatbot from "./Chatbot";
+import MyDiary from "./Components/mydiary";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/Landingau" element={<Landingau />}></Route>
           <Route path="/Chatbot" element={<Chatbot />}></Route>
+          <Route path="/MyDiary" element={<MyDiary />}></Route>
         </Routes>
       </BrowserRouter>
     </>

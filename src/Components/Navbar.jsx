@@ -133,6 +133,7 @@ export const Navbar = () => {
               Contact
             </Link>
             <Link
+            to="/MyDiary"
               style={{
                 fontSize: "18px",
                 color: "#313448",
