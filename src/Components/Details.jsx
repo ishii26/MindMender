@@ -24,7 +24,7 @@ const Details = () => {
 
   const LargeText = styled(Typography)(({ theme }) => ({
     fontSize: "64px",
-    color: "#233326",
+    color: "#313448",
     fontWeight: "700",
     [theme.breakpoints.down("md")]: {
       fontSize: "32px",
@@ -33,7 +33,7 @@ const Details = () => {
 
   const SmallText = styled(Typography)(({ theme }) => ({
     fontSize: "18px",
-    color: "#4a5733",
+    color: "#313448",
     fontWeight: "500",
     [theme.breakpoints.down("md")]: {
       fontSize: "14px",
@@ -54,7 +54,7 @@ const Details = () => {
   const Divider = styled("div")(({ theme }) => ({
     width: "13%",
     height: "5px",
-    backgroundColor: "#233326",
+    backgroundColor: "#313448",
     [theme.breakpoints.down("md")]: {
       marginLeft: "auto",
       marginRight: "auto",
@@ -74,7 +74,7 @@ const Details = () => {
             <Typography
               sx={{
                 fontSize: "35px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "700",
                 my: 3,
               }}
@@ -85,7 +85,7 @@ const Details = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "#233326",
+                color: "#313448",
                 lineHeight: "27px",
               }}
             >

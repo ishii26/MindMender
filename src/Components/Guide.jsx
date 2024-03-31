@@ -45,14 +45,14 @@ const Guide = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        bgcolor: "#f6faf2",
+        bgcolor: "#fee1dd",
       }}
     >
       <Typography
         variant="h3"
-        sx={{ fontSize: "35px", fontWeight: "bold", color: "#233326", my: 3 }}
+        sx={{ fontSize: "35px", fontWeight: "bold", color: "#313448", my: 3 }}
       >
-        <Divider sx={{ borderBottomWidth: 5, bgcolor: "#4a5733" }} />
+        <Divider sx={{ borderBottomWidth: 5, bgcolor: "#313448" }} />
         <br />
         <br />
         Types of Therapy at Mind Mender
@@ -64,7 +64,7 @@ const Guide = () => {
           sx={{
             fontSize: "16px",
             fontWeight: "500",
-            color: "#4a5733",
+            color: "#313448",
             textAlign: "center",
           }}
         >
@@ -82,7 +82,7 @@ const Guide = () => {
               alignItems: "center",
               textAlign: "center",
               border: "5px solid",
-              borderColor: "#4a5733",
+              borderColor: "#313448",
               borderRadius: "15px",
               padding: "2rem",
               minHeight: "50vh",
@@ -93,7 +93,7 @@ const Guide = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "20px",
-                color: "#233326",
+                color: "#313448",
               }}
             >
               <p>Psychotherapy</p>
@@ -101,7 +101,7 @@ const Guide = () => {
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontWeight: "bold", fontSize: "14px", color: "#4a5733" }}
+              sx={{ fontWeight: "bold", fontSize: "14px", color: "#313448" }}
             >
               <p>
                 Transference focused psychotherapy often aims to help clients
@@ -112,7 +112,7 @@ const Guide = () => {
               <br />
             </Typography>
             <CustomButton
-              backgroundColor="#233326"
+              backgroundColor="#535878"
               color="#fff"
               fontSize="18px"
               buttonText="Read More"
@@ -130,7 +130,7 @@ const Guide = () => {
               alignItems: "center",
               textAlign: "center",
               border: "5px solid",
-              borderColor: "#4a5733",
+              borderColor: "#313448",
               borderRadius: "15px",
               padding: "2rem",
               minHeight: "50vh",
@@ -141,7 +141,7 @@ const Guide = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "20px",
-                color: "#233326",
+                color: "#313448",
               }}
             >
               <p>Cognitive Behavioral Therapy</p>
@@ -149,7 +149,7 @@ const Guide = () => {
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontWeight: "bold", fontSize: "14px", color: "#4a5733" }}
+              sx={{ fontWeight: "bold", fontSize: "14px", color: "#313448" }}
             >
               <p>
                 Cognitive-behavioral therapy is a form of psychological
@@ -160,7 +160,7 @@ const Guide = () => {
               <br />
             </Typography>
             <CustomButton
-              backgroundColor="#233326"
+              backgroundColor="#535878"
               color="#fff"
               fontSize="18px"
               buttonText="Read More"
@@ -178,7 +178,7 @@ const Guide = () => {
               alignItems: "center",
               textAlign: "center",
               border: "5px solid",
-              borderColor: "#4a5733",
+              borderColor: "#313448",
               borderRadius: "15px",
               padding: "2rem",
               minHeight: "50vh",
@@ -189,7 +189,7 @@ const Guide = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "20px",
-                color: "#233326",
+                color: "#313448",
               }}
             >
               <p>Psychotherapy</p>
@@ -197,22 +197,19 @@ const Guide = () => {
             </Typography>
             <Typography
               variant="body2"
-              sx={{ fontWeight: "bold", fontSize: "14px", color: "#4a5733" }}
+              sx={{ fontWeight: "bold", fontSize: "14px", color: "#313448" }}
             >
               <p>
+                <br/>
                 Transference focused psychotherapy often
-                <br />
                 aims to help clients understand how they
-                <br />
                 externalize or transfer their emotions and
-                <br />
                 behaviors in a therapeutic setting.
               </p>
               <br />
-              <br />
             </Typography>
             <CustomButton
-              backgroundColor="#233326"
+              backgroundColor="#535878"
               color="#fff"
               fontSize="18px"
               buttonText="Read More"
@@ -221,23 +218,15 @@ const Guide = () => {
           </Box>
         </GuideBox>
       </GuidesBox>
+      <br/>
+      <br/>
       <CustomButton
-        backgroundColor="#233326"
+        backgroundColor="#535878"
         color="#fff"
         fontSize="100px"
         buttonText="Other techniques.."
         guideBtn={true}
       />
-      <Box
-        sx={{
-          display: "flex",
-          position: "absolute",
-          bottom: -990,
-          flex: "1.00",
-        }}
-      >
-        <img src={Gradient} alt="ombre" width="100%" />
-      </Box>
     </Box>
   );
 };

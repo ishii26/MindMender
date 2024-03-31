@@ -28,7 +28,7 @@ const Footer = () => {
 
   const FooterLink = styled("span")(({ theme }) => ({
     fontSize: "16px",
-    color: "#7A7A7E",
+    color: "#535878",
     fontWeight: "300",
     cursor: "pointer",
     "&:hover": {
@@ -47,7 +47,7 @@ const Footer = () => {
   }));
 
   return (
-    <Box sx={{ backgroundColor: "#e7f2dc" }}>
+    <Box sx={{ backgroundColor: "#e9c2c5" }}>
       <Divider />
       <br />
       <br />
@@ -58,7 +58,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -83,7 +83,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -100,7 +100,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -121,7 +121,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "20px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "700",
                 mb: 2,
               }}
@@ -132,7 +132,7 @@ const Footer = () => {
             <Typography
               sx={{
                 fontSize: "16px",
-                color: "#7A7A7E",
+                color: "#313448",
                 fontWeight: "500",
                 mb: 2,
               }}

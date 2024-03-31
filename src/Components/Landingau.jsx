@@ -12,7 +12,7 @@ export const Landingau = () => {
     flexWrap: "wrap",
     justifyContent: "space-around",
     gap: theme.spacing(10),
-    backgroundColor: "#e3d7eb",
+    backgroundColor: "#fee1dd",
     alignItems: "center",
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
@@ -40,9 +40,8 @@ export const Landingau = () => {
           flex: "1.00",
         }}
       >
-        <img src={Gradient2} alt="ombre" width="100%" />
       </Box>
-      <Box sx={{ backgroundColor: "#e3d7eb", textAlign: "center" }}>
+      <Box sx={{ backgroundColor: "#fee1dd", textAlign: "center" }}>
         <br />
         <br />
         <Typography
@@ -50,7 +49,7 @@ export const Landingau = () => {
           sx={{
             fontWeight: "bold",
             fontSize: "45px",
-            color: "#342044",
+            color: "#313448",
             fontFamily: "Monospace Monaco",
           }}
         >
@@ -65,12 +64,12 @@ export const Landingau = () => {
               fontSize: "h1",
               fontWeight: "bold",
               border: "5px solid",
-              borderColor: "#4d3061",
+              borderColor: "#313448",
               borderRadius: "50%",
               width: "55vh",
               padding: "3rem",
               textAlign: "center",
-              backgroundColor: "#f3eef6",
+              backgroundColor: "#f7fbfc",
               "&:hover": {
                 boxShadow: " 0 0 50px 15px #ffffff",
               },
@@ -81,7 +80,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "24px",
-                color: "#342044",
+                color: "#313448",
               }}
             >
               <p>Our Mission</p>
@@ -93,7 +92,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "500",
                 fontSize: "16px",
-                color: "#342044",
+                color: "#313448",
                 opcaity: "0.7",
               }}
             >
@@ -111,12 +110,12 @@ export const Landingau = () => {
               fontSize: "h1",
               fontWeight: "bold",
               border: "5px solid",
-              borderColor: "#4d3061",
+              borderColor: "#313448",
               borderRadius: "50%",
               width: "55vh",
               padding: "3rem",
               textAlign: "center",
-              backgroundColor: "#f3eef6",
+              backgroundColor: "#f7fbfc",
               "&:hover": {
                 boxShadow: " 0 0 50px 15px #ffffff",
               },
@@ -127,7 +126,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "24px",
-                color: "#342044",
+                color: "#342031344844",
               }}
             >
               <p>Our Therapists</p>
@@ -139,7 +138,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "500",
                 fontSize: "16px",
-                color: "#342044",
+                color: "#313448",
                 opcaity: "0.7",
               }}
             >
@@ -157,12 +156,12 @@ export const Landingau = () => {
               fontSize: "h1",
               fontWeight: "bold",
               border: "5px solid",
-              borderColor: "#4d3061",
+              borderColor: "#313448",
               borderRadius: "50%",
               width: "55vh",
               padding: "3rem",
               textAlign: "center",
-              backgroundColor: "#f3eef6",
+              backgroundColor: "#f7fbfc",
               "&:hover": {
                 boxShadow: " 0 0 50px 15px #ffffff",
               },
@@ -173,7 +172,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "24px",
-                color: "#342044",
+                color: "#313448",
               }}
             >
               <p>Our Media Coverage</p>
@@ -185,7 +184,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "500",
                 fontSize: "16px",
-                color: "#342044",
+                color: "#313448",
                 opcaity: "0.7",
               }}
             >
@@ -200,7 +199,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "18px",
-                color: "#342044",
+                color: "#313448",
               }}
             >
               <p>~ HUFFPOST</p>
@@ -213,12 +212,12 @@ export const Landingau = () => {
               fontSize: "h1",
               fontWeight: "bold",
               border: "5px solid",
-              borderColor: "#4d3061",
+              borderColor: "#313448",
               borderRadius: "50%",
               width: "55vh",
               padding: "3rem",
               textAlign: "center",
-              backgroundColor: "#f3eef6",
+              backgroundColor: "#f7fbfc",
               "&:hover": {
                 boxShadow: " 0 0 50px 15px #ffffff",
               },
@@ -229,7 +228,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "24px",
-                color: "#342044",
+                color: "#313448",
               }}
             >
               <p>Our Team</p>
@@ -240,7 +239,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "500",
                 fontSize: "16px",
-                color: "#342044",
+                color: "#313448",
                 opcaity: "0.7",
               }}
             >
@@ -259,12 +258,12 @@ export const Landingau = () => {
               fontSize: "h1",
               fontWeight: "bold",
               border: "5px solid",
-              borderColor: "#4d3061",
+              borderColor: "#313448",
               borderRadius: "50%",
               width: "55vh",
               padding: "3rem",
               textAlign: "center",
-              backgroundColor: "#f3eef6",
+              backgroundColor: "#f7fbfc",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -280,7 +279,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "bold",
                 fontSize: "24px",
-                color: "#342044",
+                color: "#313448",
               }}
             >
               <p>Our Support</p>
@@ -291,7 +290,7 @@ export const Landingau = () => {
               sx={{
                 fontWeight: "500",
                 fontSize: "16px",
-                color: "#342044",
+                color: "#313448",
                 opcaity: "0.7",
               }}
             >
@@ -302,7 +301,7 @@ export const Landingau = () => {
             </Typography>
             <br />
             <CustomButton
-              backgroundColor="#342044"
+              backgroundColor="#535878"
               color="#fff"
               buttonText="Contact Us"
             />
@@ -318,7 +317,6 @@ export const Landingau = () => {
             flex: "1.00",
           }}
         >
-          <img src={Gradient} alt="ombre" width="100%" />
         </Box>
         <br />
       </Box>

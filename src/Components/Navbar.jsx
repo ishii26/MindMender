@@ -72,7 +72,7 @@ export const Navbar = () => {
 
   return (
     //<Router>
-    <Box sx={{ bgcolor: "#f6faf2" }}>
+    <Box sx={{ bgcolor: "#e9c2c5" }}>
       <NavbarContainer>
         <Box
           sx={{
@@ -83,7 +83,7 @@ export const Navbar = () => {
           }}
         >
           <Box
-            sx={{ display: "flex", alignItems: "center", bgcolor: "#f6faf2" }}
+            sx={{ display: "flex", alignItems: "center", bgcolor: "#e9c2c5" }}
           >
             <NavbarLogo
               src={logoImg}
@@ -100,9 +100,10 @@ export const Navbar = () => {
               className="nav-link"
               style={{
                 fontSize: "18px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "bold",
                 cursor: "pointer",
+               textDecoration: 'none'
               }}
             >
               Home
@@ -112,9 +113,10 @@ export const Navbar = () => {
               className="nav-link"
               style={{
                 fontSize: "18px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "bold",
                 cursor: "pointer",
+                textDecoration: 'none'
               }}
             >
               About Us
@@ -122,9 +124,10 @@ export const Navbar = () => {
             <Link
               style={{
                 fontSize: "18px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "bold",
                 cursor: "pointer",
+                textDecoration: 'none'
               }}
             >
               Contact
@@ -132,9 +135,10 @@ export const Navbar = () => {
             <Link
               style={{
                 fontSize: "18px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "bold",
                 cursor: "pointer",
+                textDecoration: 'none'
               }}
             >
               My Diary
@@ -144,9 +148,10 @@ export const Navbar = () => {
               className="nav-link"
               style={{
                 fontSize: "18px",
-                color: "#4a5733",
+                color: "#313448",
                 fontWeight: "bold",
                 cursor: "pointer",
+                textDecoration: 'none'
               }}
             >
               Chatbot
@@ -160,7 +165,7 @@ export const Navbar = () => {
             alignItems: "center",
             justifyContent: "center",
             gap: "1rem",
-            bgcolor: "#f6faf2",
+            bgcolor: "#e9c2c5",
           }}
         >
           {/* <CustomButton
@@ -183,7 +188,7 @@ export const Navbar = () => {
             <Signupmodal />
           </div>
           <CustomButton
-            backgroundColor="#233326"
+            backgroundColor="#535878"
             color="#fff"
             buttonText="Take a Test"
           />

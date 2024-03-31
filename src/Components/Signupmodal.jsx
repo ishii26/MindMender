@@ -39,7 +39,7 @@ export default function TransitionsModal() {
     <div>
       <Button
         sx={{
-          backgroundColor: "#233326",
+          backgroundColor: "#535878",
           color: "#fff",
           fontWeight: "700",
           fontSize: "14px",

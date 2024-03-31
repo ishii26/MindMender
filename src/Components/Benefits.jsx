@@ -21,7 +21,7 @@ const Benefits = () => {
   }));
 
   return (
-    <Box sx={{ mt: 5, backgroundColor: "#f8f5fa", py: 10 }}>
+    <Box sx={{ mt: 5, backgroundColor: "#fee1dd", py: 10 }}>
       <Container>
         <BenefitsTextBox>
           <Typography
@@ -302,7 +302,6 @@ const Benefits = () => {
           flex: "1.00",
         }}
       >
-        <img src={Gradient} alt="ombre" width="100%" />
       </Box>
     </Box>
   );
