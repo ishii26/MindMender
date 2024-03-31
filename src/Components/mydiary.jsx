@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Button from "@mui/material/Button";
 
 const MyDiary = () => {
   // Initialize diary entries as an empty array
@@ -76,12 +77,14 @@ const MyDiary = () => {
               jot down thoughts, and cherish moments of your mental health journey.
             </Typography>
       {/* Input for new entry content */}
+      <Box sx={{display: "flex"}}>
       <textarea
   value={newEntryContent}
   onChange={handleNewEntryChange}
   placeholder="Write your new entry here..."
   style={{
     minHeight: "35vh", 
+    maxHeight:"35vh",
     minWidth:"80vh",
     marginLeft:"8vh",
     padding: "8px",
@@ -91,7 +94,38 @@ const MyDiary = () => {
 />
 
       {/* Button to add a new entry */}
-      <button onClick={addEntry}>Add Entry</button>
+      <Button
+        sx={{
+          backgroundColor: "#535878",
+          color: "#fff",
+          fontWeight: "700",
+          fontSize: "14px",
+          cursor: "pointer",
+          padding: "0.5rem 1.25rem",
+          borderRadius: "7px",
+          textTransform: "none",
+          display: "block",
+          onclick: "{onClick}",
+          border: "2px solid transparent",
+          maxHeight:"6vh",
+          marginLeft:"2vh",
+          marginTop:"12vh",
+          "&:hover": {
+            backgroundColor: "#fff",
+            color: "#233326",
+            borderColor: "#233326",
+          },
+        }}
+        onClick={addEntry}
+      >
+      Add Entry
+      </Button>
+      </Box>
+      <Box sx={{marginLeft:"8vh",marginTop:"8vh"}}>
+      <Typography
+              variant="body2"
+              sx={{ fontSize: "16px", color: "#313448", my: 4, marginLeft:"8vh" }}
+            >
       {/* List of diary entries */}
       <ul>
         {entries.map(entry => (
@@ -101,10 +135,34 @@ const MyDiary = () => {
             {/* Display last edited date */}
             <p>Last Edited: {entry.lastEdited}</p>
             {/* Button to delete entry */}
-            <button onClick={() => deleteEntry(entry.id)}>Delete</button>
+            <Button
+        sx={{
+          backgroundColor: "#535878",
+          color: "#fff",
+          fontWeight: "700",
+          fontSize: "14px",
+          cursor: "pointer",
+          padding: "0.5rem 1.25rem",
+          borderRadius: "7px",
+          textTransform: "none",
+          display: "block",
+          onclick: "{onClick}",
+          border: "2px solid transparent",
+          "&:hover": {
+            backgroundColor: "#fff",
+            color: "#233326",
+            borderColor: "#233326",
+          },
+        }}
+        onClick={() => deleteEntry(entry.id)}
+      >
+       Delete
+      </Button>
           </li>
         ))}
       </ul>
+      </Typography>
+      </Box>
     </div>
     </Box>
     <Footer/>
