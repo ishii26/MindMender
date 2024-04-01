@@ -228,7 +228,7 @@ const Chatbot = () => {
     <Box>
       <br />
       <Title variant="h1" sx={{ marginLeft: "25vh" }}>
-        Chatbot
+        Serene
       </Title>
       <div className="chatbot">
         <div
