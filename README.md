@@ -24,7 +24,7 @@
 
 ###### Engage with Serene, our friendly chatbot, to learn about different mental illnesses and their symptoms. Serene provides accurate and easy-to-understand descriptions, empowering users with knowledge about mental health conditions.
 
-![alt text](image-3.png)
+![alt text](image-5.png)
 
 #### Sign Up:
 
