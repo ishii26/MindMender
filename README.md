@@ -2,35 +2,35 @@
 
 ###### Mind Mender is a comprehensive mental health website designed to provide valuable resources and support for individuals seeking guidance and assistance with their mental well-being. At the heart of Mind Mender is "Serene," an interactive chatbot dedicated to providing informative descriptions of various mental illnesses. Whether you're seeking to understand anxiety, depression, OCD, PTSD, or other mental health concerns, Serene offers insightful explanations to help users gain clarity and knowledge.
 
-![alt text](image-1.png)
-
 #### Therapy Introduction:
 
 ###### Explore our main page, where we introduce the concept of therapy and its benefits. Discover valuable insights into the different types of therapy available and how they can support your mental health journey.
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 #### About Us:
 
 ###### Visit our "About Us" page to learn more about Mind Mender and the services we offer. Gain an understanding of our mission, vision, and commitment to promoting mental well-being for all.
 
-![alt text](image-2.png)
+![alt text](image.png)
 
 #### My Diary:
 
 ###### Keep track of your personal thoughts and experiences with our "My Diary" feature. Create, edit, and delete diary entries in a safe and private space, allowing you to reflect on your emotions and progress over time.
 
-![alt text](image-3.png)
+![alt text](image-2.png)
 
 #### Serene Chatbot:
 
 ###### Engage with Serene, our friendly chatbot, to learn about different mental illnesses and their symptoms. Serene provides accurate and easy-to-understand descriptions, empowering users with knowledge about mental health conditions.
 
-![alt text](image-4.png)
+![alt text](image-3.png)
 
 #### Sign Up:
 
 ###### Ready to take the next step in prioritizing your mental health? Click on the "Sign Up" button to access our registration modal and become a part of the Mind Mender community. Unlock additional features and personalized support tailored to your needs.
+
+![alt text](image-4.png)
 
 ## Why Choose Mind Mender?
 
