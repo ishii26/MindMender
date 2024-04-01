@@ -18,7 +18,7 @@ const style = {
   height: 600,
   bgcolor: "#f9f7fb",
   opacity: 0.1,
-  border: "5px solid #342044",
+  border: "5px solid #cea0aa",
   boxShadow: 24,
   p: 4,
   borderRadius: "10px",
@@ -79,7 +79,7 @@ export default function TransitionsModal() {
               sx={{
                 fontWeight: "bold",
                 fontSize: "30px",
-                color: "#342044",
+                color: "#535878",
                 textAlign: "center",
               }}
             >
@@ -178,7 +178,7 @@ export default function TransitionsModal() {
                   color: "red",
                   fontSize: "30px",
                   mt: 1,
-                  bgcolor: "#233326",
+                  bgcolor: "#535878",
                 }}
               >
                 <input
@@ -204,7 +204,7 @@ export default function TransitionsModal() {
               sx={{
                 fontWeight: "500",
                 fontSize: "14px",
-                color: "#233326",
+                color: "#535878",
               }}
             >
               <p></p>

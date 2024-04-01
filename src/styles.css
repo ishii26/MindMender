@@ -20,7 +20,7 @@ input {
 
 .form-submit {
   display: inline-block;
-  background: #342044;
+  background: #535878;
   color: #fff;
   border-bottom: none;
   width: auto;
@@ -38,8 +38,8 @@ input {
 
 .form-submit:hover {
   background: #fff;
-  color: #342044;
-  border-color: #342044;
+  color: #535878;
+  border-color: #535878;
 }
 
 body {
