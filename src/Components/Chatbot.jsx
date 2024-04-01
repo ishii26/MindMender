@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Box } from "@mui/material";
+import { Box, styled, Typography } from "@mui/material";
 
 const Chatbot = () => {
   const [input, setInput] = useState("");
@@ -35,6 +35,15 @@ const Chatbot = () => {
       sendMessage(e);
     }
   };
+  const Title = styled(Typography)(({ theme }) => ({
+    fontSize: "50px",
+    color: "#535878",
+    fontWeight: "bold",
+    margin: theme.spacing(2, 0, 4, 0),
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "30px",
+    },
+  }));
 
   // useEffect(() => {
   //   // Fetch chat history from the backend on component load

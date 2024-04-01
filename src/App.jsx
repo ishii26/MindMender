@@ -8,7 +8,7 @@ import Landing, { Landingau } from "./Components/Landingau";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Chatbot from "./Chatbot";
+import Chatbot from "./Components/Chatbot1";
 import MyDiary from "./Components/mydiary";
 
 function App() {

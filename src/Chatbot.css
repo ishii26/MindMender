@@ -1,8 +1,10 @@
 .chatbot {
   /* background-image: url(chatbot_bg.png); */
-  min-height: 40px;
-  max-height: 50px;
+  min-height: 500px;
+  overflow-y: auto; /* Add this line to enable vertical scrolling */
+  max-height: 500px; /* Set maximum height to 800px */
 }
+
 
 .chatbot-container {
   min-height: 60px;
@@ -32,13 +34,13 @@
 }
 
 .user-message {
-  color: blue;
+  color: #675055;
   margin-bottom: 10px;
   font-size: 16px;
 }
 
 .bot-message {
-  color: green;
+  color: #535878;
   font-size: 16px;
   overflow: hidden; /* Hide overflow to create a typing effect */
   animation: typing 1s steps(40, end); /* Typing animation */
@@ -74,7 +76,7 @@
 }
 
 .user-input:focus {
-  border: 1px solid #4caf50; /* Green border on focus */
+  border: 1px solid #cea0aa; /* Green border on focus */
 }
 
 .user-input::placeholder {
@@ -90,20 +92,25 @@
 }
 
 .ask-button {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  flex-grow: 1;
-  padding: 5px;
+  background-color: #535878 ;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
   cursor: pointer;
-  margin-left: 5px;
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  background-color: #4caf50; /* Green background color */
-  color: white; /* White text color */
-  transition: ease 0.3s;
+  padding: 0.5rem 1.25rem;
+  border-radius: 7px;
+  text-transform: none;
+  display: block;
+  border: 2px solid transparent;
+  max-height:6vh;
+  margin-left:2vh;
+  margin-top:12vh;
 }
 
 .ask-button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #fff;
+  color: #233326;
+  border-color: #233326;
 }
 
 .ask-button:disabled {
